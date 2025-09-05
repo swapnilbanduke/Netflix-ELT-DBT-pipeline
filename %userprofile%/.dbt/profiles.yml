@@ -1,0 +1,13 @@
+netflix:
+  outputs:
+    dev:
+      type: snowflake
+      account: BZCVSIB-XR44633
+      user: dbt
+      password: dbtPassword123
+      role: TRANSFORM
+      database: MOVIELENS
+      warehouse: COMPUTE_WH
+      schema: DEV
+      threads: 1
+  target: dev
